@@ -1,1 +1,58 @@
-<mxfile host="app.diagrams.net" modified="2022-06-08T22:59:04.711Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" version="19.0.3" etag="tcY2H8R-Jti1bF7KZWz7" type="github"><diagram id="-ydmxGw7OBz1_AixJmTa">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-06-09T01:48:08.979Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="Cxv1yP0fwdehAdmgvtH6" version="19.0.3" type="github">
+  <diagram id="-ydmxGw7OBz1_AixJmTa" name="Page-1">
+    <mxGraphModel dx="1018" dy="659" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3YyS_eOCfU_7ev0j4DHD-2" value="&lt;h1&gt;Functional Reqs&lt;/h1&gt;&lt;div&gt;- User should be able to upload images&lt;/div&gt;&lt;div&gt;- User should be able to view/download images&lt;/div&gt;&lt;div&gt;- User should be able to follow other users&lt;/div&gt;&lt;div&gt;- Users upon logging in show be able to see a News Feed that is pics uploaded by their followees&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="60" width="370" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="3YyS_eOCfU_7ev0j4DHD-3" value="&lt;h1&gt;Non func Reqs&lt;/h1&gt;&lt;div&gt;- System should be highly available. i.e User always sees a feed not necessarily the latest&lt;/div&gt;&lt;div&gt;- System is reliable, an uploaded photo or media does not get lost&lt;/div&gt;&lt;div&gt;-&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="470" y="70" width="220" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="3YyS_eOCfU_7ev0j4DHD-4" value="&lt;h1&gt;Design considerations&lt;/h1&gt;&lt;div&gt;- Lets assume 20% of the users upload while 80% view this data&lt;/div&gt;&lt;div&gt;- A ton of images can get uploaded, so management of this data is critical&lt;/div&gt;&lt;div&gt;- No data can be lost&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="90" y="210" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="3YyS_eOCfU_7ev0j4DHD-5" value="&lt;h1&gt;Capacity Planning&lt;/h1&gt;&lt;div&gt;- 500 million users and 1 million active users a day&lt;/div&gt;&lt;div&gt;- 2 million new image uploads a day with 23 per second&lt;/div&gt;&lt;div&gt;- each image is 200kb so per day 200kb * 2 million is 400 GB&lt;/div&gt;&lt;div&gt;- for 10 years it will be around 1400 TB&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="220" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="3YyS_eOCfU_7ev0j4DHD-9" value="User" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="380" width="140" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="3YyS_eOCfU_7ev0j4DHD-10" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="3YyS_eOCfU_7ev0j4DHD-9">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="3YyS_eOCfU_7ev0j4DHD-11" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="3YyS_eOCfU_7ev0j4DHD-9">
+          <mxGeometry y="52" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="3YyS_eOCfU_7ev0j4DHD-12" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="3YyS_eOCfU_7ev0j4DHD-9">
+          <mxGeometry y="78" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="3YyS_eOCfU_7ev0j4DHD-13" value="Photo" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="380" width="140" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="3YyS_eOCfU_7ev0j4DHD-14" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="3YyS_eOCfU_7ev0j4DHD-13">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="3YyS_eOCfU_7ev0j4DHD-15" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="3YyS_eOCfU_7ev0j4DHD-13">
+          <mxGeometry y="52" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="3YyS_eOCfU_7ev0j4DHD-16" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="3YyS_eOCfU_7ev0j4DHD-13">
+          <mxGeometry y="78" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="3YyS_eOCfU_7ev0j4DHD-17" value="UserFollow" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="380" width="140" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="3YyS_eOCfU_7ev0j4DHD-18" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="3YyS_eOCfU_7ev0j4DHD-17">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="3YyS_eOCfU_7ev0j4DHD-19" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="3YyS_eOCfU_7ev0j4DHD-17">
+          <mxGeometry y="52" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="3YyS_eOCfU_7ev0j4DHD-20" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="3YyS_eOCfU_7ev0j4DHD-17">
+          <mxGeometry y="78" width="140" height="26" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
